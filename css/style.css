@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  --primary-color: #96a466;
+  --dark-color: #58595b;
+}
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  font-size: 100%;
+  color: var(--dark-color);
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+h1 {
+  font-size: 3.5rem;
+  margin: 0 auto;
+  max-width: 50%;
+}
+h2 {
+  font-size: 2.75rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+span {
+  font-size: 2rem;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+label {
+  font-weight: 700;
+}
+a:hover {
+  color: #fff;
+}
+/* Navbar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 5px 0px 5px #000;
+  z-index: 1;
+}
+.navbar .container {
+  height: 80px;
+}
+.navbar .list_links a {
+  padding: 31px 20px;
+  color: black;
+}
+.navbar .list_links a:hover {
+  color: #fff;
+}
+
+/* Showcase */
+.showcase {
+  text-align: center;
+  color: #fff;
+  background: url("https://cdn.pixabay.com/photo/2017/05/22/01/28/chapada-2332850_960_720.jpg")
+    center / cover;
+  background-color: rgba(0, 0, 0, 0.412);
+  background-attachment: fixed;
+  background-blend-mode: color;
+  padding: 8em 0em;
+}
+
+.showcase button {
+  margin-top: 1.5em;
+}
+/* Park */
+
+.park .flex {
+  gap: 1.5em;
+}
+.park .description_park {
+  font-size: 1.125rem;
+}
+.park .container .park_content {
+  max-width: 400px;
+}
+/* Informations */
+.informations {
+  min-height: 400px;
+}
+.informations .flex {
+  justify-content: space-around;
+}
+.informations .information_content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+}
+.informations .information_content i {
+  font-size: 4rem;
+  margin-bottom: 0.5em;
+  align-self: center;
+  color: var(--primary-color);
+}
+.separator {
+  border-left: var(--dark-color) 2px solid;
+  height: 400px;
+}
+/* Attractions */
+.atractions {
+  position: relative;
+  padding: 2em 0em;
+}
+.atractions .flex {
+  flex-direction: column;
+  gap: 1.5em;
+}
+.atractions h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.atractions .container .flex {
+  flex-direction: row;
+  gap: 1.5em;
+}
+.atractions .container #morro_atraction {
+  text-align: right;
+}
+.atractions .atraction_content a:hover {
+  color: #fff;
+}
+
+/* Contact */
+.contact .container {
+  padding: 4em 0em;
+  justify-content: space-between;
+}
+.contact .container form {
+  flex-direction: column;
+}
+.contact .contact_text {
+  width: 50%;
+}
+.contact .container form {
+  width: 45%;
+  margin-left: 2em;
+}
+.contact .container form input {
+  width: 100%;
+  margin: 1.5em 0em;
+  padding: 0.75em;
+  border-radius: 10px;
+  border: none;
+}
+.contact .container form input:focus {
+  outline: none;
+}
+.contact .contact_text p {
+  font-size: 1.125rem;
+}
+/* Footer */
+footer .flex {
+  justify-content: space-between;
+  gap: 20px;
+}
+footer .flex .logo {
+  width: 50%;
+}
+footer .flex .social_media h3 {
+  text-align: right;
+}
+footer i {
+  color: var(--dark-color);
+  font-size: 2.125rem;
+  padding: 11px;
+}
+footer i:hover {
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+.right {
+  text-align: center;
+  padding: 1em 0em;
+  border-top: var(--dark-color) 1px solid;
+}
+/* Animations  */
+.efeito {
+  position: relative;
+  transition: all 0.5s ease;
+}
+.efeito:hover {
+  color: #fff;
+}
+.efeito::before {
+  content: "";
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.efeito:hover::before {
+  background-color: var(--primary-color);
+  z-index: -1;
+  width: 100%;
+  height: 80px;
+}
+
+@keyframes zoom {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 130%;
+  }
+}
+
+/* Efeito Scroll */
+[data-anime] {
+  opacity: 0;
+  transition: 0.4s ease;
+}
+[data-anime="down"] {
+  transform: translate3d(0px, 50px, 0px);
+}
+[data-anime="top"] {
+  transform: translate3d(0px, -50px, 0px);
+}
+[data-anime="right"] {
+  transform: translate3d(50px, 0px, 0px);
+}
+[data-anime="left"] {
+  transform: translate3d(-50px, 0px, 0px);
+}
+
+[data-anime].animate {
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+}
+
+/* Media Query */
+@media (max-width: 1020px) {
+  * {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .atractions .container :first-child {
+    text-align: center;
+  }
+
+  .separator {
+    display: none;
+  }
+  .informations .flex {
+    flex-direction: column;
+  }
+}
+@media (max-width: 870px) {
+  * {
+    font-size: 14px;
+  }
+
+  img {
+    width: 85%;
+  }
+  .showcase div,
+  .atractions .atraction_img,
+  .park .park_img,
+  .inacio .inacio_img,
+  .pati .pati_img {
+    align-items: center;
+    text-align: center;
+  }
+  .park .flex,
+  .inacio .flex,
+  .pati .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .atractions .flex .atraction {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  * {
+    font-size: 13px;
+  }
+  .showcase div,
+  .atractions .atraction_img,
+  .park .park_img,
+  .inacio .inacio_img,
+  .pati .pati_img,
+  .showcase_inacio,
+  .showcase_pati {
+    align-items: center;
+    text-align: center;
+  }
+
+  .showcase h1,
+  .showcase_contact h1,
+  .showcase_pati h1,
+  .showcase_inacio h1 {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .contact .container {
+    align-items: flex-start;
+  }
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  footer h2 {
+    font-size: 2.125rem;
+  }
+  footer .container .social_media h3 {
+    text-align: center;
+  }
+
+  .showcase_contact .flex,
+  .showcase_contact .showcase_content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .showcase_contact .flex .form_contact {
+    align-self: center;
+    max-width: 300px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .list_links a {
+    padding: 31px 10px;
+  }
+}

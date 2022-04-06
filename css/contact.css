@@ -1,0 +1,48 @@
+.showcase_contact {
+  animation: zoom 30s ease forwards;
+  min-height: 550px;
+  color: #fff;
+  background-size: 100%;
+  background: url("https://cdn.pixabay.com/photo/2022/04/06/15/46/15-46-41-381_960_720.jpg")
+    center no-repeat;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.511);
+}
+.showcase_contact h1 {
+  margin: 0;
+  width: auto;
+}
+.showcase_contact .flex {
+  gap: 2em;
+  justify-content: space-around;
+}
+
+.form_contact {
+  width: 450px;
+  min-height: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  align-self: flex-start;
+  background-color: rgba(0, 0, 0, 0.409);
+  border: var(--primary-color) solid 1px;
+}
+.showcase_contact .form_contact button {
+  margin: 10px 0px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+input,
+textarea:focus {
+  outline: none;
+}
+input {
+  margin-bottom: 20px;
+}
+textarea {
+  font-family: "Lato", sans-serif;
+}

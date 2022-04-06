@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Fale Conosco - Chapada Diamantina</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <nav>
+          <ul class="list_links flex">
+            <li><a href="index.html" class="efeito">O Parque</a></li>
+            <li>
+              <a href="#atractions" class="efeito">Atrações</a>
+            </li>
+            <li><a href="contact.html" class="efeito">Fale Conosco</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Showcase -->
+    <div class="showcase_contact p-2">
+      <div class="container flex">
+        <div class="showcase_content" data-anime="top">
+          <h1>Fale Conosco</h1>
+          <span>Tire suas dúvidas</span>
+        </div>
+        <form class="form_contact bg-terciary" data-anime="top">
+          <div class="form_input">
+            <label for="name">Nome*</label> <br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Seu nome"
+            />
+            <br />
+            <label for="phone">Telefone*</label> <br />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+              required
+              placeholder="Telefone para contato"
+            />
+            <br />
+            <label for="email">Email*</label> <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Seu Email"
+            />
+            <br />
+            <textarea
+              name="comentario"
+              id="comentario"
+              rows="10"
+              required
+              placeholder="Digite sua mensagem"
+            ></textarea>
+          </div>
+          <button class="button">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="p-4">
+      <div class="container flex">
+        <div class="logo">
+          <h2>Chapada Diamantina</h2>
+          <p>
+            Essa é minha forma de gratidão por tudo que vivi na Chapada, um
+            lugar tão mágico e com pessoas tão incríveis.
+          </p>
+        </div>
+        <div class="social_media">
+          <h3>redes sociais</h3>
+          <ul>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="container">
+      <p class="right">
+        © 2022 Thawan. Todos os direitos reservados | Criado por Thawan
+      </p>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

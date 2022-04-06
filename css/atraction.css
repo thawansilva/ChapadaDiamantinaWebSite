@@ -1,0 +1,53 @@
+/* Pati e Inácio*/
+
+.showcase_pati {
+  background: url(/Imagem/Pati/FendaPati.jpg) center / cover;
+}
+.showcase_inacio {
+  background: url("https://cdn.pixabay.com/photo/2022/04/06/15/51/15-51-26-831_960_720.jpg")
+    left / cover;
+}
+.showcase_pati,
+.showcase_inacio {
+  display: block;
+  position: relative;
+  min-height: 400px;
+  animation: zoom 20s ease forwards;
+  background-color: rgba(0, 0, 0, 0.337);
+  background-blend-mode: color;
+  color: #fff;
+  padding-top: 8em;
+}
+
+.right a {
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+
+.right a:hover {
+  color: var(--primary-color);
+}
+.pati,
+.inacio {
+  min-height: 400px;
+}
+.pati .container,
+.inacio .container {
+  gap: 2em;
+}
+.showcase_inacio h1,
+.showcase_pati h1 {
+  margin: 0;
+}
+.pati .pati_content,
+.inacio .inacio_content {
+  width: 60%;
+}
+.pati h4,
+.inacio h4 {
+  margin-top: 10px;
+}
+.inacio .container .flex {
+  flex-direction: column;
+  align-items: flex-start;
+}
